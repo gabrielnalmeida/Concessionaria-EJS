@@ -1,0 +1,312 @@
+body{
+  font-family: "opens sans", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #F0F0F0;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'opens sans', sans-serif;
+  
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #F0F0F0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+  border-radius: 20px;
+  border: 3px solid #F0F0F0;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  width: 1000px;
+  height: 419px;
+  margin: 0 auto;
+}
+
+.box-anuncio{
+  display: inline;
+  width: 430px;
+}
+
+h1{
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(23, 23, 23);
+}
+
+.box-convite{
+  margin-top: 13px;
+  margin-bottom: 34px;
+  font-size: 13px;
+  color: rgb(36, 36, 36);
+}
+
+.botao-comprar{
+  display: block;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background: rgb(96, 210, 169);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  width: 150px;
+  height: 40px;
+  border: transparent;
+  transition: all 0.3s ease;
+  margin-top: -15px;
+}
+
+.botao-comprar:hover{
+  background: rgb(78, 192, 151);
+}
+
+#scales{
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  border: 10px solid rgb(0, 0, 0);
+  background-color: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.label-check{
+  font-size: 1.2rem;
+  color: rgb(36, 36, 36);
+  margin: -38.5px 0 0 0;
+  padding-left: 1.5rem;
+  display: block;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.banner-argo{
+  width: 35%;
+  margin: 0 -60px 0 0;
+}
+
+.destaques{
+  display: flex;
+  justify-content: center;
+  margin: 0.8em;
+  font-size: 32px;
+}
+
+.slide-container{
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card{
+  border-radius: 25px;
+  background: radial-gradient(circle at 18.7% 37.8%, #6c757d 0%, #343a40 90%);
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.overlay-fastback{
+  background-image: url("https://production.autoforce.com/uploads/version/profile_image/8231/comprar-audace-t200-flex-at_2b3e67bc45.png");
+  top: 18px;
+  background-size: 80%;
+}
+
+.overlay-camry{
+  background-image: url("https://media.rti.toyota.com/config/pub/3d/toyota/1007736/1000854/Exterior/1/1200_663_PNG/77c207417f88daa7ce567e65b6ac91ac95d723b1e1c0c3ed66bdf3a1855924df.png");
+  top: 30px;
+  left: -5px;
+}
+
+.overlay-c40{
+  background-image: url("https://65e81151f52e248c552b-fe74cd567ea2f1228f846834bd67571e.ssl.cf1.rackcdn.com/ldm-images/2022-Volvo-C40-P8-Ultimate-AWD-trim.png");
+  background-size: 85%;
+  top: 10px;
+}
+
+.overlay-hatchback{
+  background-image: url("https://file.kelleybluebookimages.com/kbb/base/evox/CP/15115/2022-Honda-Civic-front_15115_032_2400x1800_WX.png");
+  top: 18px;
+  left: 10px;
+}
+
+.overlay-mk8{
+  background-image: url("https://images.thestar.com/9z7AxsgmeEZX_z3Kkt25addbap4=/650x372/smart/filters:cb(1629167159489)/https://www.thestar.com/content/dam/thestar/autos/2021/08/16/base-camp-2022-volkswagen-golf-gti/_1gti_front.png");
+  background-size: 80%;
+}
+
+.overlay-sentra{
+  background-image: url("https://di-sitebuilder-assets.s3.amazonaws.com/Nissan/MLP/Sentra/2022/Colors/Vehicles/Fresh+Powder.png");
+  left: 15px;
+  top: 10px;
+}
+
+.overlay-tiger{
+  background-image: url("https://primeiramarcha.com.br/wp-content/uploads/2020/06/tiger-900-rally-pro-my20_matt-khaki_fqu.png");
+}
+
+.overlay-nc750X{
+  background-image: url("https://motos.honda.com.ec/uploads/galeria/NC-750X_1.png");
+  background-size: 85%;
+  top: 10px;
+}
+
+.overlay-cb500x{
+  background-image: url("https://www.honda.com.br/motos/sites/hda/files/2022-05/CB500X_1280x720_02_0001s_0017_360-CB500-X-verde_03.png");
+  top: 7px;
+  left: -15px;
+}
+
+.overlay-ninja{
+  background-image: url("https://cdn.discordapp.com/attachments/888200806409568307/1042506044305309786/79_5cd55107777390f318f4a3b2268abf3f5c921ae3-removebg-preview.png");
+  background-size: 80%;
+  top: 10px;
+}
+
+.overlay-xmax{
+  background-image: url("https://precosdemotos.com.br/wp-content/uploads/2021/12/download-8.png");
+}
+
+.overlay-mt09{
+  background-image: url("https://cdn.discordapp.com/attachments/888200806409568307/1042581116491661312/unknown.png");
+}
+
+
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: transparent;
+  padding: 3px;
+}
+
+.card-image .card-img{
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #F8F9FA;
+}
+
+.description{
+  padding: 10px 0;
+  font-size: 14px;
+  color: #e9ecef;
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: #22333b;
+  padding: 8px 16px;
+  background-color: #ADB5BD;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover{
+  background: #CED4DA;
+}
+
+.swiper-navBtn{
+  color: #ADB5BD;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+  color: #6C757D;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 40px;
+}
+
+.swiper-button-next{
+  right: 0;
+}
+
+.swiper-button-prev{
+  left: 0;
+}
+
+.swiper-pagination.bullet{
+  background-color: #CED4DA;
+  opacity: 1;
+}
+
+.swiper-pagination.bullet-active{
+  background-color: #ADB5BD;
+}
+
+@media screen and (max-width: 768px){
+  .slide-content{
+      margin: 0 10px;
+  }
+
+  .swiper-navBtn{
+      display: none;
+  }
+}
