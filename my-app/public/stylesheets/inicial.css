@@ -1,5 +1,4 @@
 body{
-  font-family: "opens sans", sans-serif;
   min-height: 100vh;
   min-width: 100vw;
   background-color: #F0F0F0;
@@ -10,8 +9,6 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'opens sans', sans-serif;
-  
 }
 
 *::-webkit-scrollbar {
@@ -28,7 +25,7 @@ body{
   border: 3px solid #F0F0F0;
 }
 
-header{
+.header-inicial{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +40,7 @@ header{
   width: 430px;
 }
 
-h1{
+.title-inicial{
   font-size: 32px;
   font-weight: 700;
   color: rgb(23, 23, 23);
