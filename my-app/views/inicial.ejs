@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <link rel="stylesheet" href="stylesheets/swiper-bundle.min.css">
   <link rel="stylesheet" href="stylesheets/inicial.css">
+  <link rel="stylesheet" href="stylesheets/lightslider.css">
+  <script type="text/javascript" src="JavaScript/jquery.js"></script>
+  <script type="text/javascript" src="JavaScript/lightslider.js"></script>
 </head>
     <body> 
 
@@ -23,193 +25,123 @@
             </div>
             <img src="https://production.autoforce.com/uploads/version/profile_image/8017/comprar-trekking-1-3_8de196c88f.png" alt="Retrato de um Fiat Argo" class="banner-argo">
         </header>
-
-        <main>
-            <h2 class ="destaques">CARROS EM DESTAQUE</h2>
-            <div class="slide-container swiper">
-                <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-fastback"></span>
-
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Fiat Fastback 2023</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
+        
+        <section class="slider">
+            <ul id="autoWidth" class="cs-hidden">
+                
+                <li class="item-a">
+                    <div class="box-slide">
+                        <div class="slide-img">
+                            <img src="images/slide-home-page/Sentra-Front.jpg" class="slide-img-front" alt="">
+                            <div class="overlay-slide">
+                                <a href="#" class="buy-btn-slide">Compre Já!</a>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-camry"></span>
-
-                                <div class="card-image"></div>
+            
+                        <div class="detail-box">
+                            <div class="type-slide">
+                                <a href="#" class="ancora-slide">Nissan Sentra</a>
+                                <span class="span-slide">Modelo 2022</span>
                             </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Toyota Camry 2022</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-c40"></span>
-                                
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Volvo C40 2022</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-hatchback"></span>
-
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Honda Civic    2022</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-mk8"></span>
-
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Volkswagen Golf 2022</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-sentra"></span>
-
-                                <div    class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Nissan Sentra 2022</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
+                            <a href="#" class="price-slide">$19,510</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-
-    
-
-            <h2 class ="destaques">MOTOS EM DESTAQUE</h2>
-            <div class="slide-container swiper">
-                <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-tiger"></span>
-
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Triumph Tiger 900</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
+                </li>
+                <li class="item-a">
+                    <div class="box-slide">
+                        <div class="slide-img">
+                            <img src="images/slide-home-page/Sentra-Front.jpg" class="slide-img-front" alt="">
+                            <div class="overlay-slide">
+                                <a href="#" class="buy-btn-slide">Compre Já!</a>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-nc750X"></span>
-
-                                <div class="card-image"></div>
+            
+                        <div class="detail-box">
+                            <div class="type-slide">
+                                <a href="#" class="ancora-slide">Nissan Sentra</a>
+                                <span class="span-slide">Modelo 2022</span>
                             </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Honda NC 750X</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-cb500x"></span>
-                                
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Honda CB 500X</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-ninja"></span>
-
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Kawasaki Ninja 300 2017</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-xmax"></span>
-
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Yamaha XMAX 2022</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay overlay-mt09"></span>
-
-                                <div class="card-image"></div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Yamaha MT09</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quod exercitationem laudantium corporis quam porro, magnam omnis quidem ipsum minus eaque in ipsa asperiores? Praesentium minima magnam saepe veniam.</p>
-                                <button class="button">Ver Mais</button>
-                            </div>
+                            <a href="#" class="price-slide">$19,510</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-        </main>
+                </li>
+                <li class="item-a">
+                    <div class="box-slide">
+                        <div class="slide-img">
+                            <img src="images/slide-home-page/Sentra-Front.jpg" class="slide-img-front" alt="">
+                            <div class="overlay-slide">
+                                <a href="#" class="buy-btn-slide">Compre Já!</a>
+                            </div>
+                        </div>
+            
+                        <div class="detail-box">
+                            <div class="type-slide">
+                                <a href="#" class="ancora-slide">Nissan Sentra</a>
+                                <span class="span-slide">Modelo 2022</span>
+                            </div>
+                            <a href="#" class="price-slide">$19,510</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="box-slide">
+                        <div class="slide-img">
+                            <img src="images/slide-home-page/Sentra-Front.jpg" class="slide-img-front" alt="">
+                            <div class="overlay-slide">
+                                <a href="#" class="buy-btn-slide">Compre Já!</a>
+                            </div>
+                        </div>
+            
+                        <div class="detail-box">
+                            <div class="type-slide">
+                                <a href="#" class="ancora-slide">Nissan Sentra</a>
+                                <span class="span-slide">Modelo 2022</span>
+                            </div>
+                            <a href="#" class="price-slide">$19,510</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="box-slide">
+                        <div class="slide-img">
+                            <img src="images/slide-home-page/Sentra-Front.jpg" class="slide-img-front" alt="">
+                            <div class="overlay-slide">
+                                <a href="#" class="buy-btn-slide">Compre Já!</a>
+                            </div>
+                        </div>
+            
+                        <div class="detail-box">
+                            <div class="type-slide">
+                                <a href="#" class="ancora-slide">Nissan Sentra</a>
+                                <span class="span-slide">Modelo 2022</span>
+                            </div>
+                            <a href="#" class="price-slide">$19,510</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="box-slide">
+                        <div class="slide-img">
+                            <img src="images/slide-home-page/Sentra-Front.jpg" class="slide-img-front" alt="">
+                            <div class="overlay-slide">
+                                <a href="#" class="buy-btn-slide">Compre Já!</a>
+                            </div>
+                        </div>
+            
+                        <div class="detail-box">
+                            <div class="type-slide">
+                                <a href="#" class="ancora-slide">Nissan Sentra</a>
+                                <span class="span-slide">Modelo 2022</span>
+                            </div>
+                            <a href="#" class="price-slide">$19,510</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
         <%- include("./partiels/footer.ejs")%>
 
-
+        <script src="JavaScript/script.js"></script>
     </body>
-
-    <script src="JavaScript/swiper-bundle.min.js"></script>
-    <script src="JavaScript/script.js"></script>
-
 </html>                     
