@@ -249,6 +249,29 @@ a{
   }
 }
 
+.about-container{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title{
+  font-size: 42px;
+  padding: 30px 60px 30px 0;
+}
+
+.about-title strong{
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(78, 192, 151);
+}
+
+.about-p{
+  width: 330px;
+  padding: 30px 0;
+}
+
 @media screen and (max-width: 768px) {
   .slide-content{
     margin: 0 10px;
