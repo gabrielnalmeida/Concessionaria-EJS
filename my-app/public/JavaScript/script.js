@@ -6,7 +6,7 @@ var swiper = new Swiper(".slide-content", {
   fade: 'true',
   grabCursor: 'true',
   autoplay: {
-    delay: 2500,
+    delay: 100000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
