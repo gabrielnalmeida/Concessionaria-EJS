@@ -107,13 +107,18 @@ body{
 /* Google Fonts - Poppins */
 
 .container-form{
-    height: 100vh;
+    height: 0;
     width: 100%;
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4070f4;
     column-gap: 30px;
+}
+
+.container-form.active{
+  opacity: 1;
+  height: 100vh;
 }
 .form{
     position: absolute;
